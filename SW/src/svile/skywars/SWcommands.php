@@ -479,7 +479,7 @@ class SWcommands
 				}
 				if(!$sender->hasPermission("skywars.command")){
 					$sender->sendMessage(TextFormat::AQUA . '->' . TextFormat::RED . 'Usage: /sw <create|setspawn|list|delete|signdelete>');
-				}}
+				}
                 break;
 
 
