@@ -45,7 +45,7 @@ namespace svile\skywars\utils;
 use svile\skywars\SWmain;
 use pocketmine\plugin\Plugin;
 use pocketmine\player\Player;
-
+use onebone\economyapi\EconomyAPI;
 
 class SWeconomy
 {
