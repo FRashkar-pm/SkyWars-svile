@@ -471,11 +471,15 @@ class SWcommands
 
             default:
                 //No option found, usage
-				if(!$sender->hasPermission("skywars.command")){
-					$sender->sendMessage(TextFormat::AQUA . '→' . TextFormat::RED . 'Usage: /sw [join|quit]');
-				} else {
-					$sender->sendMessage(TextFormat::AQUA . '→' . TextFormat::RED . 'Usage: /sw [create|setspawn|list|delete|signdelete]');
+				if(!$sender->hasPermission("skywars.command.quit")){
+					$sender->sendMessage(TextFormat::AQUA . '>' . TextFormat::RED . 'Usage: /sw <quit>');
 				}
+				if(!$sender->hasPermission("skywars.command.join")){
+					$sender->sendMessage(TextFormat::AQUA . '>' . TextFormat::RED . 'Usage: /sw <join>');
+				}
+				if(!$sender->hasPermission("skywars.command")){
+					$sender->sendMessage(TextFormat::AQUA . '>' . TextFormat::RED . 'Usage: /sw [create|setspawn|list|delete|signdelete]');
+				}}
                 break;
 
 
