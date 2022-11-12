@@ -202,6 +202,7 @@ class SWmain extends PluginBase
         $this->loadSigns();
 
         //svile\sw\SWcommands
+	$this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
         $this->commands = new SWcommands($this);
         if ($this->configs['reward.winning.players']) {
             //\svile\sw\utils\SWeconomy
