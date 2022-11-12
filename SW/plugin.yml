@@ -15,7 +15,7 @@ commands:
   description: SkyWars join command
   permission: skywars.command.join
  "sw quit":
-  descriptiion: SkyWars quit command
+  description: SkyWars quit command
   permission: skywars.command.quit
 
 permissions:
