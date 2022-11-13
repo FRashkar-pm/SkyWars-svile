@@ -140,7 +140,7 @@ class SWcommands
 				break;
 
             case 'create':
-				if(!$sender->hasPermission("skywars.command"))
+				if(!$sender->hasPermission("skywars.command.create"))
 					return false;
                 /*
                                           _
@@ -305,6 +305,8 @@ class SWcommands
 
 
             case 'setspawn':
+				if(!$sender->hasPermission("skywars.command.setspawn"))
+					return false;
                 /*
                             _    ____
                  ___   ___ | |_ / ___|  _ __   __ _ __      __ _ __
@@ -349,6 +351,8 @@ class SWcommands
 
 
             case 'list':
+				if(!$sender->hasPermission("skywars.command.list"))
+					return false;
                 /*
                   _   _         _
                  | | (_)  ___  | |_
@@ -369,6 +373,8 @@ class SWcommands
 
 
             case 'delete':
+				if(!$sender->hasPermission("skywars.command.delete"))
+					return false;
                 /*
                      _        _        _
                   __| |  ___ | |  ___ | |_   ___
@@ -419,6 +425,8 @@ class SWcommands
 
 
             case 'signdelete':
+				if(!$sender->hasPermission("skywars.command.signdelete"))
+					return false;
                 /*
                       _                ____         _        _
                  ___ (_)  __ _  _ __  |  _ \   ___ | |  ___ | |_   ___
