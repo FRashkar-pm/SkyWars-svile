@@ -472,6 +472,8 @@ class SWcommands
             default:
                 //No option found, usage
 				if(!$sender->hasPermission("skywars.command")){
+					$sender->sendMessage(TextFormat::AQUA . '->' . TextFormat::RED . 'Usage: /sw <join|quit>');
+				} else {
 					$sender->sendMessage(TextFormat::AQUA . '->' . TextFormat::RED . 'Usage: /sw <create|setspawn|list|delete|signdelete>');
 				}
                 break;
