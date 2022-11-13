@@ -11,12 +11,6 @@ commands:
  sw:
   description: SkyWars main command
   permission: skywars.command
- swjoin:
-  description: SkyWars join command
-  permission: skywars.command.join
- swquit:
-  description: SkyWars quit command
-  permission: skywars.command.quit
 
 permissions:
   skywars.command:
